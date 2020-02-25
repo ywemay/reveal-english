@@ -7,6 +7,28 @@
 .card.simple{
   color: black;
 }
+span.red {
+  color: darkred;
+  border-color: darkred;
+}
+span.blue {
+  color: darkblue;
+  border-color: darkblue;
+}
+span.green {
+  color: darkgreen;
+  border-color: darkgreen;
+}
+.reveal section img.star {
+  width: 30px;
+  height: 30px;
+  border: 0px none;
+}
+
+.star.current-fragment {
+  border: 0px none;
+}
+
 card.blue{
   color: darkblue;
   border-color: darkblue;
@@ -30,4 +52,7 @@ card {
   font-size: 50pt;
   font-weight: bolder;
   box-shadow: 10px 10px 8px grey;
+}
+.wide-space {
+  padding: 30px;
 }
