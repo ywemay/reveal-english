@@ -1,0 +1,33 @@
+.fragment.hidden-show {
+  display: none;
+}
+.fragment.hidden-show.current-fragment {
+  display: block;
+}
+.card.simple{
+  color: black;
+}
+card.blue{
+  color: darkblue;
+  border-color: darkblue;
+  background-color: lightgoldenrodyellow;
+}
+card.green{
+  color: darkgreen;
+  border-color: darkgreen;
+  background-color: lightgoldenrodyellow;
+}
+card.red{
+  color: darkred;
+  border-color: darkred;
+  background-color: lightgoldenrodyellow;
+}
+card {
+  background: white;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  margin: 3px;
+  font-size: 50pt;
+  font-weight: bolder;
+  box-shadow: 10px 10px 8px grey;
+}

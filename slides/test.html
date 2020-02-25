@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/white.css">
+		<link rel="stylesheet" href="/css/phonetics.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>Phonix</h1>
+          <aside class="notes">Lets do some greetings! Hello! Hi! How are you?</aside>
+        </section>
+        <section>
+          <video controls autoplay>
+            <source data-src="/video/fox_anonce.mp4" type="video/mp4" />
+            <aside class="notes">This is just a test video.</aside>
+          </video>
+        </section>
+        <section>
+          <p class="fragment hidden-show"><card class="red">ar</card></p>
+          <p class="fragment hidden-show" data-notes="Say CAR"><card>c</card><card class="red">ar</card></p>
+          <p class="fragment hidden-show"><card>c</card><card class="red">ar</card><card>d</card></p>
+          <p class="fragment hidden-show"><card>c</card><card class="red">ar</card><card>t</card></p>
+          <p class="fragment hidden-show"><card>b</card><card class="red">ar</card></p>
+          <p class="fragment hidden-show"><card>b</card><card class="red">ar</card><card>t</card></p>
+          <p class="fragment hidden-show"><card>m</card><card class="red">ar</card></p>
+          <p class="fragment hidden-show"><card>m</card><card class="red">ar</card><card>s</card></p>
+          <p class="fragment hidden-show"><card>st</card><card class="red">ar</card></p>
+          <p class="fragment hidden-show"><card>st</card><card class="red">ar</card><card>t</card></p>
+          <aside class="notes">
+            Read each example using diphtong.
+          </aside>
+        </section>
+        <section>
+          <h1>Dictation</h1>
+          <p><card class="red">ar</card></p>
+          <img src="/img/dictation.jpg" />
+        </section>
+				<section>
+          <p class="fragment hidden-show"><card class="green">or</card></p>
+          <p class="fragment hidden-show"><card>t</card><card class="green">or</card></p>
+          <p class="fragment hidden-show"><card>f</card><card class="green">or</card></p>
+          <p class="fragment hidden-show"><card>f</card><card class="green">or</card><card>t</card></p>
+          <p class="fragment hidden-show"><card>m</card><card class="green">or</card></p>
+          <p class="fragment hidden-show"><card>m</card><card class="green">or</card><card>e</card></p>
+        </section>
+        <section>
+          <h1>Dictation</h1>
+          <p><card class="green">or</card></p>
+          <img src="/img/dictation.jpg" />
+        </section>
+				<section>
+          <p class="fragment hidden-show"><card class="blue">all</card></p>
+          <p class="fragment hidden-show"><card>b</card><card class="blue">all</card></p>
+          <p class="fragment hidden-show"><card>t</card><card class="blue">all</card></p>
+          <p class="fragment hidden-show"><card>f</card><card class="blue">all</card></p>
+          <p class="fragment hidden-show"><card>m</card><card class="blue">all</card></p>
+        </section>
+        <section>
+          <h1>Dictation</h1>
+          <p><card class="blue">all</card></p>
+          <img src="/img/dictation.jpg" />
+        </section>
+			</div>
+		</div>
+
+    <!-- script src="/components/socket.io/socket.io.js"></script -->
+		<script src="/js/reveal.js"></script>
+		<script src="/js/config.js"></script>
+		<script src="/js/main.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: '/plugin/markdown/marked.js' },
+					{ src: '/plugin/markdown/markdown.js' },
+					{ src: '/plugin/highlight/highlight.js' },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

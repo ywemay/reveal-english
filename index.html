@@ -26,11 +26,30 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section>
+          <video controls autoplay>
+            <source data-src="video/fox_anonce.mp4" type="video/mp4" />
+          </video>
+        </section>
+        <section>
+          <p class="fragment hidden-show"><span class="card simple">c</span><span class="card red">ar</span></p>
+          <p class="fragment hidden-show"><span class="card simple">b</span><span class="card red">ar</span></p>
+          <p class="fragment hidden-show"><span class="card simple">s</span><span class="card red">ar</span></p>
+        </section>
+				<section>
+          <h1>Slide 2</h1>
+          <h3>Sample slide 2</h3>
+          <p class="fragment grow">Sample fragment 1</p>
+          <p class="fragment shrink">Sample fragment 2</p>
+          <p class="fragment roll-in">Sample fragment 3</p>
+        </section>
 			</div>
 		</div>
 
-		<script src="js/reveal.js"></script>
+    <script src="components/socket.io/socket.io.js"></script>
+		<script src="/js/reveal.js"></script>
+		<script src="/js/config.js"></script>
+		<script src="/js/main.js"></script>
 
 		<script>
 			// More info about config & dependencies:
