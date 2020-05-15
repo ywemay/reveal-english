@@ -1,0 +1,462 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/reveal.css">
+		<link rel="stylesheet" href="/css/theme/white.css">
+		<link rel="stylesheet" href="/css/phonetics.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/lib/css/monokai.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+      var lessonId = 'L01';
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+    <script src="/js/jquery-1.11.1.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>phonetics</h1>
+          <h3>Lesson 1</h3>
+        </section>
+				<section>
+          <h2>Presentation</h2>
+          <div class="cards-row">
+            <card class="red fragment hiidden-show" mp3="ii.mp3">/i:/</card>
+            <card class="red fragment hiidden-show" mp3="I.mp3">/ɪ/</card>
+          </div>
+          <div>
+            <card class="green fragment hiidden-show" mp3="p.mp3">/p/</card>
+            <card class="blue fragment hiidden-show" mp3="b.mp3">/b/</card>
+          </div>
+          <div>
+            <card class="green fragment hiidden-show" mp3="t.mp3">/t/</card>
+            <card class="blue fragment hiidden-show" mp3="d.mp3">/d/</card>
+          </div>
+          <div>
+            <card class="green fragment hiidden-show" mp3="k.mp3">/k/</card>
+            <card class="blue fragment hiidden-show" mp3="g.mp3">/g/</card>
+          </div>
+        </section>
+        <section>
+          <p><card class="red" mp3="ii.mp3">/i:/</card><p>
+          <div class="half">
+              <img class="mouth" src="img/L01/ii.jpg" />
+          </div>
+          <div class="half">
+              <img class="mouth2" src="img/L01/ii-m.jpg" /><br />
+              <card class="red fragment hiidden-show" mp3="iix4.mp3">/i:/ /i:/ /i:/ /i:/</card>
+          </div>
+        </section>
+        <section>
+          <p><card class="red" mp3="I.mp3">/ɪ/</card><p>
+          <div class="half">
+              <img class="mouth" src="img/L01/I.jpg" />
+              <img class="mouth2" src="img/L01/I-m.jpg" /><br />
+          </div>
+          <div class="half">
+              <card class="red fragment hiidden-show" mp3="Ix4.mp3">/ɪ/ /ɪ/ /ɪ/ /ɪ/ </card>
+              <card class="red fragment hiidden-show" mp3="Ix4.mp3">/ɪ/ /i:/ /ɪ/ /i:/ </card>
+              <div class="fragment hiidden-show" >
+                <span class="vowel">/i:/</span>&rarr;<span class="voiced">/ɪ/</span>
+                <span class="vowel">/i:/</span>&rarr;<span class="voiced">/ɪ/</span>
+                <span class="vowel">/i:/</span>&rarr;<span class="voiced">/ɪ/</span>
+                <span class="vowel">/i:/</span>&rarr;<span class="voiced">/ɪ/</span>
+              </div>
+          </div>
+        </section>
+        <section>
+          <p>
+            <card class="green" mp3="p.mp3">/p/</card>
+            <card class="blue" mp3="b.mp3">/b/</card>
+          <p>
+          <div class="half">
+              <img class="mouth" src="img/L01/pb.jpg" />
+              <img class="mouth2" src="img/L01/pb-m.jpg" />
+          </div>
+          <div class="half">
+              <card class="green fragment hiidden-show" mp3="px4.mp3">/p/ /p/ /p/ /p/ </card>
+              <card class="blue fragment hiidden-show" mp3="bx4.mp3">/b/ /b/ /b/ /b/ </card>
+              <div class="fragment hiidden-show" >
+                <span class="unvoiced">/p/</span>&rarr;<span class="voiced">/b/</span>
+                <span class="unvoiced">/p/</span>&rarr;<span class="voiced">/b/</span>
+                <span class="unvoiced">/p/</span>&rarr;<span class="voiced">/b/</span>
+                <span class="unvoiced">/p/</span>&rarr;<span class="voiced">/b/</span>
+              </div>
+          </div>
+        </section>
+        <section>
+          <div class="half"><phonetable
+              cols="i:, ɪ"
+              rows="p, b"
+              /></div>
+          <div class="half"><phonetable class="fragment hiidden-show"
+              cols="p, b"
+              rows="i:, ɪ"
+              /></div>
+          <div><phonetable class="fragment hiidden-show"
+              cols="pi:, pɪ, bi:, pɪ"
+              rows="p, b"
+              /></div>
+        </section>
+        <section>
+          <p>
+            <card class="green" mp3="t.mp3">/t/</card>
+            <card class="blue" mp3="d.mp3">/d/</card>
+          <p>
+          <div class="half">
+              <img class="mouth" src="img/L01/td.jpg" />
+              <img class="mouth2" src="img/L01/td-m.jpg" />
+          </div>
+          <div class="half">
+              <card class="green fragment hiidden-show" mp3="tx4.mp3">/t/ /t/ /t/ /t/ </card><br />
+              <card class="blue fragment hiidden-show" mp3="dx4.mp3">/d/ /d/ /d/ /d/ </card>
+              <div class="fragment hiidden-show" >
+                <span class="unvoiced">/t/</span>&rarr;<span class="voiced">/d/</span>
+                <span class="unvoiced">/t/</span>&rarr;<span class="voiced">/d/</span>
+                <span class="unvoiced">/t/</span>&rarr;<span class="voiced">/d/</span>
+                <span class="unvoiced">/t/</span>&rarr;<span class="voiced">/d/</span>
+              </div>
+          </div>
+        </section>
+        <section>
+          <div class="half"><phonetable
+              cols="i:, ɪ"
+              rows="p, b, t, d"
+              /></div>
+          <div class="half"><phonetable class="fragment hiidden-show"
+              cols="p, b, t, d"
+              rows="i:, ɪ"
+              /></div>
+        </section>
+        <section>
+          <phonetable
+              cols="pi:, pɪ, bi:, bɪ, ti:, tɪ, di:, dɪ"
+              rows="p, b, t, d"
+              invert=1
+              />
+        </section>
+        <section>
+          <p>
+            <card class="green" mp3="k.mp3">/k/</card>
+            <card class="blue" mp3="g.mp3">/g/</card>
+          <p>
+          <div class="half">
+              <img class="mouth" src="img/L01/kg.jpg" />
+              <img class="mouth2" src="img/L01/kg-m.jpg" />
+          </div>
+          <div class="half">
+              <card class="green fragment hiidden-show" mp3="kx4.mp3">/k/ /k/ /k/ /k/ </card>
+              <card class="blue fragment hiidden-show" mp3="gx4.mp3">/g/ /g/ /g/ /g/ </card>
+              <div class="fragment hiidden-show" >
+                <span class="unvoiced">/k/</span>&rarr;<span class="voiced">/g/</span>
+                <span class="unvoiced">/k/</span>&rarr;<span class="voiced">/g/</span>
+                <span class="unvoiced">/k/</span>&rarr;<span class="voiced">/g/</span>
+                <span class="unvoiced">/k/</span>&rarr;<span class="voiced">/g/</span>
+              </div>
+          </div>
+        </section>
+        <section>
+          <div><phonetable
+              cols="i:, ɪ"
+              rows="p, b, t, d, k, g"
+              /></div>
+        </section>
+        <section>
+          <div><phonetable
+              cols="p, b, t, d, k, g"
+              rows="i:, ɪ"
+              /></div>
+        </section>
+        <section>
+          <phonetable class="smallfont"
+              rows="pi:, pɪ, bi:, bɪ, ti:, tɪ, di:, dɪ, ki:, kɪ, gi:, gɪ"
+              cols="p, b, t, d, k, g"
+              />
+        </section>
+
+        <section>
+            <div class="half"><img src="img/L01/pea.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">pea</card><br />
+              <card class="autocolor fragment hiidden-show">/pi:/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/bee.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">bee</card><br />
+              <card class="autocolor fragment hiidden-show">/bi:/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/tea.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">tea</card><br />
+              <card class="autocolor fragment hiidden-show">/ti:/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/eat.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">eat</card><br />
+              <card class="autocolor fragment hiidden-show">/i:t/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/kid.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">kid</card><br />
+              <card class="autocolor fragment hiidden-show">/kɪd/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/kik.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">kik</card><br />
+              <card class="autocolor fragment hiidden-show">/kɪk/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/ticket.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">ticket</card><br />
+              <card class="autocolor fragment hiidden-show">/'tɪkɪt/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/dig.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">dig</card><br />
+              <card class="autocolor fragment hiidden-show">/dɪg/</card>
+            </div>
+        </section>
+
+        <section>
+            <div class="half"><img src="img/L01/beat.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">beat</card><br />
+              <card class="autocolor fragment hiidden-show">/bi:t/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/deep.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">deep</card><br />
+              <card class="autocolor fragment hiidden-show">/di:p/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/bit.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">bit</card><br />
+              <card class="autocolor fragment hiidden-show">/bɪt/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/tip.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">tip</card><br />
+              <card class="autocolor fragment hiidden-show">/tɪp/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/pig.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">pig</card><br />
+              <card class="autocolor fragment hiidden-show">/pɪg/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/key.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">key</card><br />
+              <card class="autocolor fragment hiidden-show">/ki:/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/big.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">big</card><br />
+              <card class="autocolor fragment hiidden-show">/bɪg/</card>
+            </div>
+        </section>
+        <section>
+            <div class="half"><img src="img/L01/key2.jpg" /></div>
+            <div class="half">
+              <card class="autocolor">key</card><br />
+              <card class="autocolor fragment hiidden-show">/ki:/</card>
+            </div>
+        </section>
+			</div>
+		</div>
+
+    <!-- script src="/components/socket.io/socket.io.js"></script -->
+		<script src="/js/reveal.js"></script>
+		<script src="/js/config.js"></script>
+		<script src="/js/main.js"></script>
+
+		<script>
+      $("card").click(function () {
+        if($(this).attr('mp3')) {
+          var audioFileName = 'audio/' + lessonId + '/' + $(this).attr('mp3');
+          var audio = new Audio(audioFileName);
+          var oldBg = $(this).css('background');
+          $(this).css('background', 'yellow');
+          var theItem = $(this);
+          audio.addEventListener('ended', function() {
+            theItem.css('background', oldBg);
+          }, false);
+          audio.play();
+        }
+      })
+
+      $("phonetable").each(function() {
+        var theCols = $(this).attr("cols").split(", ");
+        var theRows = $(this).attr("rows").split(", ");
+        var bInvert = $(this).attr("invert");
+        //body reference
+        //var body = document.getElementsByTagName("body")[0];
+
+        // create elements <table> and a <tbody>
+        var tbl = document.createElement("table");
+        var tblBody = document.createElement("tbody");
+
+        var row = document.createElement("tr");
+        var th = document.createElement("th");
+        row.appendChild(th);
+
+        for (var i = 0; i < theCols.length; i++) {
+          // create element <td> and text node
+          //Make text node the contents of <td> element
+          // put <td> at end of the table row
+          var cell = document.createElement("th");
+          var cellText = document.createTextNode(theCols[i]);
+
+          cell.appendChild(cellText);
+          row.appendChild(cell);
+        }
+        tblBody.appendChild(row);
+
+        // cells creation
+        for (var j = 0; j < theRows.length; j++) {
+          // table row creation
+          var row = document.createElement("tr");
+          var th = document.createElement("th");
+          var cellText = document.createTextNode(theRows[j]);
+          th.appendChild(cellText);
+          row.appendChild(th);
+
+
+          for (var i = 0; i < theCols.length; i++) {
+            // create element <td> and text node
+            //Make text node the contents of <td> element
+            // put <td> at end of the table row
+            var cell = document.createElement("td");
+            if (!bInvert) {
+              var cellText = document.createTextNode(theRows[j] + theCols[i]);
+            }
+            else {
+              var cellText = document.createTextNode(theCols[i] + theRows[j]);
+            }
+
+            cell.appendChild(cellText);
+            row.appendChild(cell);
+          }
+
+          //row added to end of table body
+          tblBody.appendChild(row);
+        }
+
+        // append the <tbody> inside the <table>
+        tbl.appendChild(tblBody);
+        // put <table> in the <body>
+        this.appendChild(tbl);
+
+      });
+
+      function fakeSprintf(aStr, aVar) {
+        var sParts = aStr.split('%s');
+        if (sParts.length < 2) return;
+        return sParts.join(aVar);
+      }
+
+      function replaceAll(txt, toRepl, replWith) {
+        if (toRepl instanceof Array) {
+          for(var i=0; i<toRepl.length; i++) {
+            txt = txt.split(toRepl[i]).join(fakeSprintf(replWith, toRepl[i]));
+          }
+        }
+        else {
+            txt = txt.split(toRepl).join(fakeSprintf(replWith, toRepl));
+        }
+        return txt;
+      }
+
+      $("card.autocolor").each(function(){
+          var txt = $(this).html();
+          var map = {
+            'p': '<span class="unvoiced">p</span>',
+            't': '<span class="unvoiced">t</span>',
+            'k': '<span class="unvoiced">k</span>',
+            'b': '<span class="voiced">b</span>',
+            'd': '<span class="voiced">d</span>',
+            'g': '<span class="voiced">g</span>',
+            'ea': '<span class="vowel">ea</span>',
+            'ee': '<span class="vowel">ee</span>',
+            'ey': '<span class="vowel">ey</span>',
+            'i:': '<span class="vowel">i:</span>',
+            'i': '<span class="vowel">i</span>',
+            'ɪ': '<span class="vowel">ɪ</span>',
+          }
+          var rez = '';
+          for(var i=0; i<txt.length; i++) {
+            if (i < txt.length - 1 && map[txt[i] + txt[i+1]]) {
+              rez += map[txt[i] + txt[i+1]];
+              i = i + 1;
+            }
+            else if (map[txt[i]]) {
+              rez += map[txt[i]];
+            }
+            else {
+              rez += txt[i];
+            }
+          }
+          $(this).html(rez);
+      });
+
+      $("card").each(function() {
+        if (!$(this).attr('span')) return;
+        var repl = $(this).attr('span');
+        var txt = $(this).html();
+        $(this).html(txt.split(repl).join('<span>' + repl + '</span>'));
+      })
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: '/plugin/markdown/marked.js' },
+					{ src: '/plugin/markdown/markdown.js' },
+					{ src: '/plugin/highlight/highlight.js' },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

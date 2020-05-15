@@ -40,19 +40,72 @@ card.green{
   background-color: lightgoldenrodyellow;
 }
 card.red{
-  color: darkred;
+  color: red;
   border-color: darkred;
   background-color: lightgoldenrodyellow;
 }
 card {
+  line-height: 90pt;
   background: white;
   padding: 10px 20px;
   border: 2px solid #333;
   margin: 3px;
-  font-size: 50pt;
+  font-size: 40pt;
   font-weight: bolder;
   box-shadow: 10px 10px 8px grey;
+  border-radius: 10pt;
 }
 .wide-space {
   padding: 30px;
+}
+
+img.mouth {
+  height: 250pt;
+  border-radius: 15pt;
+}
+img.mouth2 {
+  height: 100pt;
+  border-radius: 15pt;
+}
+
+div.blocks div {
+  display: inline;
+}
+div.blocks div {
+  vertical-align: top;
+}
+div.half {
+  vertical-align: top;
+  width: 45%;
+  display: inline-block;
+}
+.vowel{
+  color: red;
+}
+.voiced {
+  color: darkblue;
+}
+.unvoiced {
+  color: darkgreen;
+}
+
+phonetable table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+phonetable table tr:first-child th {
+  background: lightblue;
+}
+phonetable table tr th {
+  background: lightgreen;
+  border: 1px solid black;
+}
+phonetable tr td {
+  border: 1px solid black;
+}
+phonetable {
+  display: inline-block;
+}
+phonetable.smallfont {
+  font-size: 20pt;
 }
