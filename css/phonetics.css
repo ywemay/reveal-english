@@ -109,3 +109,8 @@ phonetable {
 phonetable.smallfont {
   font-size: 20pt;
 }
+
+example span,
+card span {
+  color: red;
+}
