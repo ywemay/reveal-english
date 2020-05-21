@@ -1,3 +1,15 @@
 body {
   background: url(/assets/img/bg/bg_honey.png) bottom no-repeat;
+  background-size: contain;
+}
+
+.exercise li{
+}
+.exercise li span {
+  color: red;
+}
+.exercise li word {
+  width: 150pt;
+  text-align: left;
+  display: inline-block;
 }

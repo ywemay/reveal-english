@@ -32,28 +32,39 @@ span.green {
 card.blue{
   color: darkblue;
   border-color: darkblue;
-  background-color: lightgoldenrodyellow;
+  background-color: lightblue;
 }
 card.green{
   color: darkgreen;
   border-color: darkgreen;
-  background-color: lightgoldenrodyellow;
+  background-color: lightgreen;
 }
 card.red{
   color: red;
   border-color: darkred;
-  background-color: lightgoldenrodyellow;
+  background-color: #fee;
 }
 card {
   line-height: 90pt;
   background: white;
   padding: 10px 20px;
-  border: 2px solid #333;
+  border: 2px solid #888;
   margin: 3px;
   font-size: 40pt;
   font-weight: bolder;
   box-shadow: 10px 10px 8px grey;
+  white-space: nowrap;
   border-radius: 10pt;
+}
+
+card.card0 {
+  border-color: red;
+}
+card.card1 {
+  border-color: green;
+}
+card.card2 {
+  border-color: orange;
 }
 .wide-space {
   padding: 30px;
@@ -109,8 +120,31 @@ phonetable {
 phonetable.smallfont {
   font-size: 20pt;
 }
-
+game span,
+table tr td span,
 example span,
 card span {
   color: red;
+}
+.hidden {
+  display: none;
+}
+table.resolved tr td.false{
+  text-decoration: line-through;
+  color: silver;
+}
+
+div.score div {
+  display: inline-block;
+  width: 160pt;
+  font-size: 200%;
+  color: red;
+  border: 4px solid black;
+  margin: 20pt;
+  border-radius: 5pt;
+}
+
+div.score {
+  padding-bottom: 20pt;
+  margin-top: -100pt;
 }
