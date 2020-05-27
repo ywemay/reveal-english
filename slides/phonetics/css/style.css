@@ -10,6 +10,16 @@ body {
 }
 .exercise li word {
   width: 150pt;
+  font-size: 90%;
   text-align: left;
   display: inline-block;
+  white-space: nowrap;
+}
+card {
+  font-size: 80%;
+  line-height: 60pt;
+}
+card {
+  font-size: 80%;
+  line-height: 60pt;
 }

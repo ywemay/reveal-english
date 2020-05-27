@@ -121,10 +121,21 @@ phonetable.smallfont {
   font-size: 20pt;
 }
 game span,
-table tr td span,
 example span,
 card span {
   color: red;
+}
+
+.blue game span,
+.blue example span,
+.blue card span {
+  color: blue;
+}
+
+.green game span,
+.green example span,
+.green card span {
+  color: green;
 }
 .hidden {
   display: none;

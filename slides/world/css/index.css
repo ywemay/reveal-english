@@ -1,0 +1,30 @@
+.red { color: red }
+.blue { color: blue }
+.green { color: green }
+
+div.lesson-index {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid gray;
+  box-shadow: 1pt 2pt 3pt 3pt silver;
+  margin: 4pt;
+  padding: 4pt 10pt;
+  width: 100pt;
+  align-content: center;
+}
+div.lesson-index h2 {
+  margin: 0pt;
+}
+div.lesson-index div {
+  text-align: center;
+}
+div.lesson-index a {
+  margin: 5pt;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 150%;
+  padding: 2pt;
+  line-height: 33pt;
+  display: inline-block;
+  width: 40pt;
+}

@@ -179,8 +179,10 @@ $("card.autocolor").each(function(){
 });
 
 function markedToSpans(str) {
-  var re = new RegExp(/[\^\`](.)|\!(.+)\!/, 'g')
-  return str.replace(re, "<span>$1$2</span>");
+  var re = new RegExp(/[\^\`](.)/, 'g')
+  var re2 = new RegExp(/\!(.{1,3})\!/, 'g')
+  str = str.replace(re, "<span>$1</span>");
+  return str.replace(re2, "<span>$1</span>");
 }
 
 $("card[mark], example[mark], table tr td[mark], .exercise[mark] li").each(function(){

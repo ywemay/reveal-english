@@ -1,0 +1,16 @@
+.names li {
+  display: inline-block;
+  border: 3px solid blue;
+  border-radius: 5pt;
+  margin: 6pt;
+  padding: 5pt 12pt;
+  background: lightblue;
+  color: darkblue;
+  font-weight: bolder;
+  font-size: 150%;
+}
+.names.girls li {
+  background: #ffc;
+  color: darkred;
+  border-color: darkred;
+}

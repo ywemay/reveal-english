@@ -1,0 +1,59 @@
+Vowel Sounds
+
+    long a /eɪ/
+    short a /æ/
+    long e /i/
+    short e /ɛ/
+    long i /ɑɪ/
+    short i /ɪ/
+    long o /oʊ/
+    short o /ɑ/
+    long u /ju/
+    short u /ʌ/
+    other u /ʊ/
+    oo sound /u/
+    aw sound /ɔ/
+    oi sound /ɔɪ/
+    ow sound /aʊ/
+              /ɒ/
+              /ɜ/
+
+R-controlled vowels
+
+    schwa+r /ɚ/
+    ar sound /ɑr/
+    or sound /ɔr/
+    air sound /ɛr/
+
+Consonant Sounds
+
+    b sound /b/
+    ch sound /ʧ/
+    d sound /d/
+    f sound /f/
+    g sound /g/
+    h sound /h/
+    j sound /ʤ/
+    k sound /k/
+    l sound /l/
+    m sound /m/
+    n sound /n/
+    ng sound /ŋ/
+    p sound /p/
+    r sound /r/
+    s sound /s/
+    sh sound /ʃ/
+    t sound /t/
+    th sound (unvoiced) /θ/
+    th sound (voiced) /ð/
+    v sound /v/
+    w sound /w/
+    y sound /y/
+    z sound /z/
+    zh sound /ʒ/
+
+Other sound lessons
+
+    Introduction to schwa /ə/
+    -s, -es,  's endings in English
+    When /t/ doesn't sound like /t/

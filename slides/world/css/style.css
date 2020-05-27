@@ -1,0 +1,31 @@
+.cards4 .card {
+  align-content: center;
+  max-width: 45%;
+  padding: 0pt;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0pt 20pt;
+}
+
+.cards4 .card img{
+  height: 120pt;
+}
+
+body {
+  background: beige url('../img/worldmap.png') bottom no-repeat;
+  background-size: contain;
+}
+.move-up {
+  position: absolute;
+  top: 60pt;
+  left: 600pt;
+}
+
+.card {
+  border: 2px solid silver;
+  border-radius: 5pt;
+  background: green;
+  color: white;
+  display: inline-block;
+  padding: 4pt 15pt;
+}
