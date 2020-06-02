@@ -1,0 +1,53 @@
+div.cols3 div {
+  display: inline-block;
+  max-width: 30%;
+  min-width: 30%;
+  padding: 6pt;
+}
+img {
+  border: 0px none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+div.cols3 div img {
+  max-height: 120pt;
+}
+.notes {
+  display: none;
+}
+div.ordering-box img,
+div.ordering-elements img {
+  max-height: 80pt;
+}
+div.ordering-box svg,
+div.ordering-elements svg {
+  height: 80pt;
+  width: 100pt;
+}
+div.ordering-box {
+  border: 3px solid orange;
+  min-height: 120pt;
+  padding: 20pt 5pt;
+}
+div.ordering-elements {
+  min-height: 120pt;
+}
+div.places div{
+  background-position-x: 0;
+  background-size: cover;
+}
+div.places div {
+  width: 32%;
+  height: 300pt;
+  display: inline-block;
+  background-repeat: no-repeat !important;
+}
+section button {
+  padding: 10pt 15pt;
+  font-size: 18pt;
+  font-weight: bolder;
+  background-image: linear-gradient(to top, orange, #fff);
+  color: darkred;
+  border-radius: 16pt;
+  border: 2px solid darkred;
+}

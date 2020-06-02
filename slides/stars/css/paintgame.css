@@ -1,0 +1,25 @@
+.paintgame .sidebar {
+  float: left;
+  position: fixed;
+  bottom: 100pt;
+  width:60px;
+}
+
+.paintgame .swatches rect {
+  stroke: black;
+  stroke-opacity: 0.3;
+  stroke-width: 2pt;
+}
+.paintgame .swatches .selection {
+  stroke-opacity: 1;
+  stroke: #00f;
+  fill: none;
+}
+.paintgame.full svg {
+  stroke: #000;
+  stroke-width: 0.3pt;
+  stroke-opacity: 1;
+}
+.paintgame.full svg {
+  fill: #ccc;
+}

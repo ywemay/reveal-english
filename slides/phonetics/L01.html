@@ -24,12 +24,13 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
     <script src="/js/jquery-1.11.1.js"></script>
+    <script src="/js/axios.min.js"></script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-          <h1>phonetics</h1>
+				<section class="transcribe">
+          <h1 class="word">phonetics</h1>
           <h3>Lesson 1</h3>
         </section>
 				<section>
@@ -65,12 +66,14 @@
           </div>
         </section>
         <section>
-          <card class="" span="ee" mp3="../sheep.ogg">sheep</card>
-          <card class="fragment hiidden-show" span="ee" mp3="../bee.ogg">bee</card>
-          <card class="fragment hiidden-show" span="ee" mp3="../green.ogg">green</card>
-          <card class="fragment hiidden-show" span="ee" mp3="../tree.ogg">tree</card>
+          <div class="transcribe">
+            <card class="" span="ee" mp3="../sheep.ogg">sheep</card>
+            <card class="fragment hiidden-show" span="ee" mp3="../bee.ogg">bee</card>
+            <card class="fragment hiidden-show" span="ee" mp3="../green.ogg">green</card>
+            <card class="fragment hiidden-show" span="ee" mp3="../tree.ogg">tree</card>
+          </div>
           <br />
-          <p>
+          <p class="transcribe">
             <example class="fragment hiidden-show" span="ee" mp3="sheep_meets_bee.ogg">
             A sheep meets a bee under a green tree
             <example>
@@ -717,6 +720,19 @@
         var parts = $(this).attr('span').split(', ');
         $(this).html(getColorMarking($(this).html(), parts));
       });
+
+
+      $('.transcribe card, .transcribe example').each(function() {
+        var el =$(this);
+        axios.get('/php/phonemic.php?w=' + $(this).text())
+          .then(function(response){
+            el.html(el.html() + ' /' + response.data.trans + '/');
+          })
+          .catch(function(err) {
+            console.log(err)
+          })
+      })
+
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies

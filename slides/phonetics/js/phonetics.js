@@ -1,3 +1,6 @@
+var lessonId = window.location.search.split('=')[1];
+console.log(lessonId);
+
 function strtokey(str) {
   str = str.toLowerCase();
   str = str.replace(new RegExp(/(^\W+?)|(\W+?$)/, 'g'), '');

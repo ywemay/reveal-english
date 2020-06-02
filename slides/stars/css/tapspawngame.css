@@ -1,0 +1,9 @@
+.tap-spawn-game .blue {
+  border: 3px solid blue;
+}
+.tap-spawn-game .orange {
+  border: 3px solid orange;
+}
+.tap-spawn-game .white {
+  border: 3px solid #fff;
+}

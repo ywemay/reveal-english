@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Vacations</title>
+
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/reveal.css">
+		<!-- link rel="stylesheet" href="/css/theme/white.css" -->
+		<link rel="stylesheet" href="/css/theme/beige.css">
+		<link rel="stylesheet" href="/css/phonetics.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/lib/css/monokai.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/css/print/pdf.css' : '/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+    <script src="/js/jquery-1.11.1.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+          <h1>My House</h1>
+          <h3>Intro</h3>
+          <video src="video/intro.mp4" controls />
+        </section>
+
+        <section>
+          <h2>About</h2>
+          <video src="video/vacations/intro.mp4" controls />
+        </section>
+
+        <section>
+          <h2>Song</h2>
+          <video src="video/vacations/song.mp4" controls />
+        </section>
+
+        <section>
+          <h2>Missing Words</h2>
+          <video src="video/vacations/missing_words.mp4" controls height="390pt">
+            Your browser does not support.
+          </video>
+          <div>
+            <a href="video/vacations/vacations.odt" target="_blank">Print</a>
+          </div>
+        </section>
+
+        <section>
+          <h2>Answer</h2>
+          <video src="video/vacations/answer.mp4" controls />
+        </section>
+
+        <section>
+          <h2>The End</h2>
+        </section>
+			</div>
+		</div>
+
+    <!-- script src="/components/socket.io/socket.io.js"></script -->
+		<script src="/js/reveal.js"></script>
+		<script src="/js/config.js"></script>
+		<script src="/js/main.js"></script>
+    <script src="js/phonetics.js"></script>
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: '/plugin/markdown/marked.js' },
+					{ src: '/plugin/markdown/markdown.js' },
+					{ src: '/plugin/highlight/highlight.js' },
+					{ src: '/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+  </body>
+  </html>
