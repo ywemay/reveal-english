@@ -23,3 +23,6 @@ card {
   font-size: 80%;
   line-height: 60pt;
 }
+.line-through {
+  text-decoration: line-through;
+}

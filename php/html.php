@@ -5,9 +5,10 @@ function attr($attr) {
   if (is_array($attr)) {
     $attrs = array();
     foreach ($attr as $key => $value) {
-      $attrs[$key] = "$key=\"$value\"";
+      if (is_array($value)) $value = implode(' ', $value);
+      $attrs[$key] = (!is_int($key)) ? "$key=\"$value\"" : $value;
     }
-    $rez = ' ' . implode($attrs);
+    $rez = ' ' . implode(' ', $attrs);
   }
   elseif($attr) {
     $rez = ' ' . $attr;
@@ -29,6 +30,7 @@ function h6($str, $attr = false) { return h(6, $str, $attr); }
 
 function el($tag, $content, $attr = false) {
   $attr = attr($attr);
+  $content = array2content($content);
   return "<$tag$attr>$content</$tag>\n";
 }
 
@@ -64,6 +66,22 @@ function svg($fname) {
   if (file_exists($fname)) {
     return file_get_contents($fname);
   }
+}
+
+function img($src, $attr = []) {
+  $attr['src'] = $src;
+  $attr = attr($attr);
+  return "<img$attr />";
+}
+
+function array2content($content) {
+  if (is_array($content)) {
+    foreach ($content as $k => $value) {
+      $content[$k] = is_array($value) ? array2content($value) : $value;
+    }
+    return implode("\n", $content);
+  }
+  return $content;
 }
 
 ?>

@@ -1,0 +1,61 @@
+# Separate words and images by ;
+
+- present:
+    words: f!ar!mer; f!ar!; c!ar!; f!ar!m
+    phrase: A f!ar!mer goes f!ar! by c!ar! to work in a f!ar!m.
+
+# - video:
+#    title: Theory
+#    url: video/sounds/L05.webm
+
+- rules:
+    a: "m`ask; p`assport; sungl`asses"
+    ar: "!ar!m; m!ar!ket; sh!ar!pener"
+
+- rules:
+    al: "c!al!m; h!al!f; p!al!m"
+    au: "l!au!gh; !au!nt"
+    ear: "h!ear!t"
+
+- examples:
+    - "a l`arge f`arm"
+    - "a sm!ar!t p!ar!tner"
+    - "p!ar!k the c!ar!"
+    - "a h!ar!d-working f!ar!mer"
+    - "play the guit!ar!"
+    - "st!ar!t our lesson"
+    - "He is my f`ather"
+    - "No p!ar!king"
+    - "P`ardon me?"
+
+- dialogue:
+    img: img/noimage.png
+    dialogue:
+      - "- Please show me your ID c!ar!d."
+      - "- Here you !ar!e."
+
+- tongue_twist:
+    twist: "The !ar!tist !ar!gues c!ar!toons !ar!e h!ar!dly h!ar!mful."
+    img: img/noimage.png
+
+- tongue_twist:
+    twist: "The f!ar!mer st!ar!ted to play the guit!ar! in his l!ar!ge f!ar!m."
+    img: img/noimage.png
+
+- game_choose_false:
+    # coma and space separated words:
+    correct: ban`ana, gl`ass, f`ather, sh!ar!k, st!ar!, c!ar!d, c!ar!, f!ar!, h!ar!d, !ar!t, d!ar!k, g!ar!den, c!al!m, h!al!f, p!al!m
+    wrong: c`ap, w!ar!m, h!al!l
+
+- exercise:
+    lines:
+      # - A. word B. word C. word D. word
+      - A. ban`ana B. c`ap C. gl`ass D. f`ather
+      - A. sh`a`rk B. st`a`r C. c`a`rd D. w!ar!m
+      - A. c!ar! B. f!ar! C. w!ar!m D. h!ar!d
+      - A. !ar!t B. d!ar!k C. w!ar!m D. g!ar!den
+      - A. c!al!m B. h!al!f C. h!al!l D. p!al!m
+    answer: BDCCC
+
+# - image_word: b!ir!d
+# - image_word: sk!ir!t

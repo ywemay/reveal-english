@@ -5,5 +5,6 @@ include(DIR_PHP . '/page.php');
 include(DIR_PHP . '/html.php');
 include(DIR_PHP . '/games.php');
 include(DIR_PHP . '/params.php');
+include(DIR_PHP . '/slide.php');
 include(DIR_PHP . '/utils/lesson.php');
 ?>

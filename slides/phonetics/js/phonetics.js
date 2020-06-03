@@ -341,3 +341,12 @@ function getRandomArrayElements(arr, count) {
     }
     return shuffled.slice(min);
 }
+
+$('.exercise word').click(function() {
+  if ($(this).hasClass('line-through')) {
+    $(this).removeClass('line-through');
+  }
+  else {
+    $(this).addClass('line-through');
+  }
+});

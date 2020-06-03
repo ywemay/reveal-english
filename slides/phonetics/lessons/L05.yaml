@@ -1,0 +1,64 @@
+- present:
+    words: d!ir!ty; g!ir!l; f!ur!; sk!ir!t
+    phrase: The d`i`rty g`i`rl likes the f`u`r sk`i`rt.
+
+- video:
+    title: Theory
+    url: video/sounds/L05.webm
+
+- rules:
+    er: c`e`rtain; comm`e`rcial
+    or: w`o`rd; w`o`rld
+    ir: b`i`rth; b`i`rthday; c`i`rcus
+
+- rules:
+    ur: s!ur!f; s`u`rface; f`u`rniture
+    ear: p`e`a`rl; `e`a`rth; `e`a`rthquake
+    our: j!our!ney
+
+- video:
+    title: Practice
+    url: video/sounds/L05-example.webm
+
+- examples:
+    - d`i`rty c`u`rtain
+    - an `e`a`rly b`i`rd
+    - s`e`rve dess`e`rt
+    - a p`e`rfect w`o`rld
+    - h`e`r f`i`rst sk`i`rt
+    - ret`u`rn h`e`r p`u`rse
+    - Happy B`i`rthday!
+    - He's a n`e`rvous p`e`rson.
+    - It's the f`i`rst day of the new t`e`rm
+
+- dialogue:
+    img: img/learning_words.jpg
+    dialogue:
+      - What is the worke`r doing?
+      - He is l`e`a`rning w`o`rds.
+
+- tongue_twist:
+    twist: The f`i`rst g`i`rl pref`e`rred dess`e`rt.
+    img: img/dessert.jpg
+
+- tongue_twist:
+    twist: A d`i`rty w`o`rker ret`u`rned the p`u`rse to the n`u`rse.
+    img: img/dirty_worker.jpg;img/purse.jpg;img/nurse.jpg
+
+- game_choose_false:
+    correct: sh!ir!t, h!er!, g!ir!l, w!or!d, w!or!ker, w!or!ld, b!ir!th, c!ir!cus, h!ur!t, !ear!ly, l!ear!n, p!ea!rl, c!ur!l, s!ur!vey, c!er!tain
+    wrong: broth!er!, doct!or!, answ!er!, h!ear!t, lat!er!
+
+- exercise:
+    lines:
+      - A. broth`e`r B. sh`i`rt C. h`e`r D. g`i`rl
+      - A. w`o`rd B. doct`o`r C. w`o`rker D. w`o`rld
+      - A. b`i`rth B. c`i`rcus C. answ`e`r D. h`u`rt
+      - A. `e`a`rly B. h`e`a`rt C. l`e`a`rn D. p`e`a`rl
+      - A. c`u`rl. B. s`u`rvey C. c`e`rtain D. lat`e`r
+    answer: ABCBD
+
+- image_word: b!ir!d
+- image_word: sk!ir!t
+- image_word: d`ess!er!t
+- image_word: s`ir

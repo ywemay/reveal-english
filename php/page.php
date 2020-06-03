@@ -141,7 +141,12 @@ class Page {
       "/js/config.js",
       "/js/main.js"
     );
-    $content = div($this->get_content($src),
+    $isYaml = preg_match("/\.yaml$/", $src);
+    if ($isYaml) {
+      $ph = new Phonetics();
+    }
+    $content = div(
+      !$isYaml ? $this->get_content($src) : $ph->buildFromYaml($src),
       ['class' => 'slides']);
 
     $this->content = div($content, ['class' => 'reveal']);

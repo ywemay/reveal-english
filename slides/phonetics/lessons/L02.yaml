@@ -1,0 +1,57 @@
+- present:
+    words: big; fish; live; witch
+    phrase: A b`ig f`ish doesn't w`ish to l`ive w`ith a w`itch.
+
+# - video:
+#    title: Theory
+#    url: video/sounds/L05.webm
+
+- rules:
+    e: `first; `expensive
+    i: `if; p`icn`ic; med`icine
+    u: b`usy; min`ute; b`usiness
+
+- rules:
+    y: cop`y; compan`y
+    ey: mon!ey!; hon!ey!; journ!ey!
+
+- examples:
+    - "a b`ig c`ity"
+    - "a b`ig br`idge"
+    - "m`iss `it"
+    - "mag`ic tr`icks"
+    - "pock`et mon!ey!"
+    - "cap`ital c`ity"
+    - "s`it down, please"
+    - "What a p`ity!"
+
+- dialogue:
+    img: img/minimouse-happy.jpg
+    dialogue:
+      - "What's your hobb`y?""
+      - "I like l`istening to mus`ic and hav`ing a p`icn`ic."
+
+- tongue_twist:
+    twist: "W`ill you come `in? He's sw`imm`ing `in the r`iver w`ith T`im."
+    img: img/noimage.png
+
+- tongue_twist:
+    twist: "I w`ish to w`ish the w`ish you w`ish to w`ish."
+    img: img/noimage.png
+
+- game_choose_false:
+    # coma and space separated words:
+    correct: "b`ig, s`ix, m`iss, bab`y, man`y, strawberr`y, f`ish, g`ive, l`ittle, Engl`ish, p`icture, th`is, s`it, f`it"
+    wrong: "n`ice, goodb`ye, f`ind, r`ight"
+
+- exercise:
+    lines:
+      - A. big B. six C. nice D. miss
+      - A. baby B. many C. goodbye D. strawberry
+      - A. fish B. find C. give D. little
+      - A. give B. right C. English D. picture
+      - A. this B. sit C. nice D. fit
+    answer: CCBBC
+
+# - image_word: b!ir!d
+# - image_word: sk!ir!t

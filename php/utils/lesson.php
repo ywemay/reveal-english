@@ -1,8 +1,13 @@
 <?php
 
 function lesson_exists($key) {
-  return file_exists('./lessons/' . $key . '.php');
+  $fname = 'lessons/' . $key . '.php';
+  if (file_exists($fname)) return $fname;
+  $fname = 'lessons/' . $key . '.yaml';
+  if (file_exists($fname)) return $fname;
+  return false;
 }
+
 
 function print_lessons_index($page) {
   $lessons = glob('./lessons/*.php');

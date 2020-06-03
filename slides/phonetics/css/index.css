@@ -1,6 +1,7 @@
 .vowel { color: red }
 .voiced { color: blue }
 .unvoiced { color: green }
+.missing { color: gray }
 
 div.lesson-index {
   display: inline-block;

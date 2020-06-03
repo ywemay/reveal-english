@@ -2,10 +2,10 @@
 include('../../config.php');
 include('php/phonetics.php');
 
-$page = new Page("Learning Stars");
+$page = new Page("Phonetics");
 
 $lesson = g('lesson');
-if ($lesson && lesson_exists($lesson)) {
+if ($lesson && ($fn = lesson_exists($lesson))) {
   $page->theme('white');
   $page->css([
     "css/style.css",
@@ -20,20 +20,24 @@ if ($lesson && lesson_exists($lesson)) {
     "js/tapspawngame.js",
     "js/init.js"
   ]);
-  $page->build_slideshow("lessons/${lesson}.php");
+  $page->build_slideshow($fn);
 }
 else {
   $ph = new Phonetics();
 
-  // i: ɪ æ ɜ: ə ʌ ɑ: ɔ: ɒ u: ʊ
+  // iː ɪ æ ɜː ə ʌ ɑː ɔː ɒ uː ʊ
   // eɪ aɪ ɔɪ əʊ aʊ ɪə eə ʊə
   // θ ð ʃ ʒ tʃ dʒ ŋ
 
   $sets = $ph->lessonSets([
-    [['i:', 'ɪ'], ['p', 'b'], ['t', 'd'], ['k', 'd']],
+    [['iː', 'ɪ'], ['p', 'b'], ['t', 'd'], ['k', 'd']],
     [['e', 'æ'], ['f', 'v'], ['h', 'r']],
-    [['ɜ:', 'ə'], ['s', 'z'], ['θ', 'ð']],
-    [['ɑ:', 'ʌ'], ['l'], ['m', 'n', 'ŋ']],
+    [['ɜː', 'ə'], ['s', 'z'], ['θ', 'ð']],
+    [['ɑː', 'ʌ'], ['l'], ['m', 'n', 'ŋ']],
+    [['ɔː', 'ɒ'], ['ʃ', 'ʒ'], ['tʃ', 'dʒ']],
+    [['uː', 'ʊ'], ['tr', 'dr']],
+    [['eɪ', 'aɪ'], ['ɔɪ', 'əʊ'], ['aʊ'], ['ts', 'dz']],
+    [['ɪə', 'eə', 'ʊə'], ['w', 'j']]
   ]);
 
   $page->css('css/index.css');
