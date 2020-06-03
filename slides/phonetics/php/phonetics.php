@@ -152,6 +152,7 @@ class Phonetics {
 
   function cureWord(&$word) {
     $word = trim($word);
+    return $word;
     $word = preg_replace([
       "/(\`\w)+/",
       "/\`/"
@@ -197,6 +198,10 @@ class Phonetics {
     ], $w);
     $tr = exec("espeak -x -q --ipa \"$w\"");
     $tr = str_replace($this->sound, '<span>' . $this->sound . '</span>', $tr);
+    $tr = str_replace([
+      'ˈ', 'ɹ'], [
+      '', 'r'],
+      $tr);
     return trim($tr);
   }
 
