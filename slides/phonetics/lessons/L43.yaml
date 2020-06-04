@@ -1,0 +1,55 @@
+# Separate words and images by ;
+
+- present:
+    words: ca`mel; `mark; ho`me; `map
+    phrase: A ca`mel is `marking his ho`me in the `map.
+
+# - video:
+#    title: Theory
+#    url: video/sounds/L05.webm
+
+- rules:
+    m: "`milk; e`mpty; ca`mera "
+    mm: yu`m`my; co`m`mon; su`m`mer
+    
+
+- examples:
+    - co`me fro`m
+    - "`make `money "
+    - "`Mickey `Mouse "
+    - Co`me on!
+    - Wait a `mo`ment!
+    - Can I have du`mplings for dinner, Mo`m?
+    - "`Mid-Autu`mn Day "
+    - "`music roo`m"
+    - "`many sta`mps"
+
+- dialogue:
+    img: img/noimage.png
+    dialogue:
+      - Can I go to your house to do ho`mework to`morrow?
+      - Sure. Come with To`m.
+
+- tongue_twist:
+    twist: "`Mary has to `make `more `money this su`m`mer to go to A`merica."
+    img: img/noimage.png
+
+- tongue_twist:
+    twist: "`Mickey wanted to `make a `mooncake but he `made a `mistake"
+    img: img/noimage.png
+
+- game_choose_false:
+    # coma and space separated words:
+    correct: "`map, `mark, `make, mind, mouse, mouth "
+    wrong: "`nap, `now "
+
+- exercise:
+    lines:
+      # - A. word B. word C. word D. word
+      - A. `map B. `mark C.`nap D. `make
+      - A. `mind B. `now C. `mouse D. `mouth
+      
+    answer: CB
+
+# - image_word: b!ir!d
+# - image_word: sk!ir!t 

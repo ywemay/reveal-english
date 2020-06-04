@@ -45,18 +45,17 @@ card.red{
   background-color: #fee;
 }
 card {
-  line-height: 90pt;
+  display: inline-block;
   background: white;
-  padding: 10px 20px;
+  padding: 0px 30px;
   border: 2px solid #888;
-  margin: 3px;
-  font-size: 40pt;
+  margin: 6px;
+  font-size: 25pt;
   font-weight: bolder;
   box-shadow: 10px 10px 8px grey;
   white-space: nowrap;
   border-radius: 10pt;
 }
-
 card.card0 {
   border-color: red;
 }

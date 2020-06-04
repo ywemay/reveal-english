@@ -2,10 +2,11 @@
 include('../../config.php');
 include('php/phonetics.php');
 
-$page = new Page("Phonetics");
+$page = new Phonetics();
+$page->title = "Phonetics";
 
 $lesson = g('lesson');
-if ($lesson && ($fn = lesson_exists($lesson))) {
+if ($page->getLesson()) {
   $page->theme('white');
   $page->css([
     "css/style.css",
@@ -20,16 +21,15 @@ if ($lesson && ($fn = lesson_exists($lesson))) {
     "js/tapspawngame.js",
     "js/init.js"
   ]);
-  $page->build_slideshow($fn);
+  $page->build_slideshow();
 }
 else {
-  $ph = new Phonetics();
 
   // iː ɪ æ ɜː ə ʌ ɑː ɔː ɒ uː ʊ
   // eɪ aɪ ɔɪ əʊ aʊ ɪə eə ʊə
   // θ ð ʃ ʒ tʃ dʒ ŋ
 
-  $sets = $ph->lessonSets([
+  $sets = $page->lessonSets([
     [['iː', 'ɪ'], ['p', 'b'], ['t', 'd'], ['k', 'd']],
     [['e', 'æ'], ['f', 'v'], ['h', 'r']],
     [['ɜː', 'ə'], ['s', 'z'], ['θ', 'ð']],

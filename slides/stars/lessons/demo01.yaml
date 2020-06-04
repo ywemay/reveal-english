@@ -1,0 +1,18 @@
+- section:
+    h1: Learning Stars
+    h2: Demo 1
+
+- video:
+    src: some/video.mp4
+
+- image:
+    title: Pink
+    generate:
+      tpl: splash
+      style: fill:pink
+
+- image:
+    title: Green
+    generate:
+      tpl: splash
+      style: fill:green

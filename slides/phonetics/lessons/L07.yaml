@@ -1,0 +1,60 @@
+# Separate words and images by ;
+
+- present:
+    words: h`ungry; br`other; m`oney; h`oney
+    phrase: My h`ungry br`other needs s`ome m`oney to buy s`ome h`oney.
+
+# - video:
+#    title: Theory
+#    url: video/sounds/L05.webm
+
+- rules:
+    o: t`on; w`orry; w`onderful
+    u: c`ut; p`ublic; `understand
+
+- rules:
+    oo: bl`o`od; fl`o`od
+    ou: d`o`uble; c`o`untry; c`o`untryside
+
+- examples:
+    - l`ucky m`oney
+    - bl`o`od br`other
+    - a h`ungry r`unner
+    - a f`unny c`ustomer
+    - c`ome `up
+    - H`urry `up!
+    - Keep in t`o`uch!
+    - Good l`uck!
+    - The `Ugly D`uckling
+
+- dialogue:
+    img: img/noimage.png
+    dialogue:
+      - What did you do j`ust now?
+      - I had l`unch with a l`ovely girl.
+
+- tongue_twist:
+    twist: B`ut l`uckily B`uck's br`other l`oves `such an `ugly d`ove.
+    img: img/noimage.png
+
+- tongue_twist:
+    twist: "`Others don't want to t`o`uch the m`oney in the c`up."
+    img: img/noimage.png
+
+- game_choose_false:
+    # coma and space separated words:
+    correct: m`uch, b`us, m`ug, br`other, s`ome, d`oes, c`ome, br`other, m`other, c`up, m`ug, b`us, r`un, `us, b`ut
+    wrong: r`uler, s`orry, g`o, st`udent, gl`ue
+
+- exercise:
+    lines:
+      # - A. word B. word C. word D. word
+      - A. m`uch B. b`us C. m`ug D. r`uler
+      - A. s`orry B. br`other C. s`ome D. d`oes
+      - A. c`ome B. br`other C. m`other D. g`o
+      - A. c`up B. m`ug C. st`udent D. b`us
+      - A. gl`ue B. r`un C. `us D. b`ut
+    answer: DADCA
+
+# - image_word: b!ir!d
+# - image_word: sk!ir!t

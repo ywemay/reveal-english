@@ -1,0 +1,55 @@
+# Separate words and images by ;
+
+- present:
+    words: pi`nk; mo`nkey; si`n`gi`n`g; shoppi`n`g
+    phrase: A pi`nk mo`nkey is si`n`gi`n`g while shoppi`n`g.
+
+# - video:
+#    title: Theory
+#    url: video/sounds/L05.webm
+
+- rules:
+    "n": ba`nk; bli`nk; a`ngry
+    ng: bri`n`g; alo`n`g; exciti`n`g
+    
+
+- examples:
+    - an a`ngry ki`n`g
+    - a hu`ngry mo`nkey
+    - a you`n`g si`n`ger
+    - a stro`n`g mo`nk
+    - No eati`n`g and drinki`n`g
+    - No swimi`n`g.
+    - somethi`n`g interesti`n`g
+    - frighteni`n`g lightni`n`g
+    - The you`n`g ki`n`g is reading in the livi`n`g room.
+
+- dialogue:
+    img: img/noimage.png
+    dialogue:
+      - Anythi`n`g else?
+      - No, tha`nk you. I'm full.
+
+- tongue_twist:
+    twist: Just thi`nk, that i`nk has a smell that sti`nks!
+    img: img/noimage.png
+
+- tongue_twist:
+    twist: The good-looki`n`g ki`n`g is fishi`n`g while the interesti`n`g si`n`ger is smoki`n`g.
+    img: img/noimage.png
+
+- game_choose_false:
+    # coma and space separated words:
+    correct: thi`nk, tha`nk, u`ncle, a`ngry, ba`nk, hu`ngry
+    wrong: ora`nge, a`nswer
+
+- exercise:
+    lines:
+      # - A. word B. word C. word D. word
+      - A. ora`nge B. thi`nk C.tha`nk D. u`ncle
+      - A. a`ngry B. ba`nk C. hu`ngry D. a`nswer
+      
+    answer: AD
+
+# - image_word: b!ir!d
+# - image_word: sk!ir!t 

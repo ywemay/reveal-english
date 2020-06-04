@@ -1,28 +1,30 @@
 <?php
 include('../../config.php');
 
-$page = new Page("Learning Stars");
+$oLesson = new Lesson();
+$oLesson->title = "Learning Stars";
 
-$lesson = g('lesson');
-if ($lesson && lesson_exists($lesson)) {
-  $page->theme('serif');
-  $page->css([
+if ($oLesson->getLesson()) {
+  $oLesson->theme('serif');
+  $oLesson->css([
     "css/style.css",
     "css/paintgame.css",
     "css/tapspawngame.css",
   ]);
-  $page->js("/js/axios.min.js");
-  $page->postjs([
+  $oLesson->js("/js/axios.min.js");
+  $oLesson->postjs([
     "js/main.js",
     "js/audio.js",
     "js/paintgame.js",
     "js/tapspawngame.js",
     "js/init.js"
   ]);
-  $page->build_slideshow("lessons/${lesson}.php");
+
+  $oLesson->build_slideshow();
 }
 else {
-  print_lessons_index($page);
+  $l = new Lesson();
+  $l->lessons_index($oLesson);
 }
 
 ?>

@@ -1,0 +1,89 @@
+- section:
+    h1: Hello!
+    h2: How are you?
+
+- image:
+    src: img/svg/Jack.svg
+    title: Jack
+
+- image:
+    src: img/svg/Lilly.svg
+    title: Lilly
+
+- image:
+    src: img/svg/Bella.svg
+    title: Bella
+
+- image:
+    src: img/svg/Horsey.svg
+    title: Horsey
+
+- paint_game:
+    art: img/svg/Jack_paint.svg
+    buttons:
+      - red
+      - ['#fca', 'beige']
+      - blue
+      - brown
+      - white
+      - black
+
+- paint_game:
+    art: img/svg/Lilly.svg
+    buttons:
+      - ['#ef4a9c', 'pink']
+      - orange
+      - ['#fca', 'beige']
+      - blue
+      - brown
+      - black
+      - white
+      - lightblue
+
+- paint_game:
+    art: img/svg/Horsey.svg
+    buttons:
+      - white
+      - ['#704526', 'darkbrown']
+      - ['#a36739', 'brown']
+
+- listen_and_order:
+    words:
+      - Jack
+      - Lilly
+      - Horsey
+      - Bella
+
+- image:
+    src: img/svg/mom.svg
+    title: Mom
+
+- image:
+    src: img/svg/dad.svg
+    title: Dad
+
+- image:
+    src: img/svg/grandma.svg
+    title: grandma
+
+- image:
+    src: img/svg/grandpa.svg
+    title: grandpa
+
+- listen_and_order:
+    words:
+      - mom
+      - dad
+      - grandma
+      - grandpa
+
+- listen_and_order:
+    words:
+      - mom
+      - Lilly
+      - dad
+      - Jack
+      - grandma
+      - Horsey
+      - grandpa
+      - Bella

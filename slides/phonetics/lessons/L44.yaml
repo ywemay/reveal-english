@@ -1,0 +1,55 @@
+# Separate words and images by ;
+
+- present:
+    words: lio`n; bega`n; lemo`n; violi`n
+    phrase: The lio`n bega`n to play the viol`in while eating a lemo`n .
+
+# - video:
+#    title: Theory
+#    url: video/sounds/L05.webm
+
+- rules:
+    "n": "`net; pa`nda; a`nimal "
+    nn: ru`n`ner; su`n`ny; wi`n`ner
+    
+
+- examples:
+    - o`n o`ne's ow`n
+    - a `new stude`nt
+    - pho`ne `number
+    - a`nswer the pho`ne
+    - "`Native American"
+    - "`Native Chinese"
+    - Have fu`n!
+    - It's a fu`n`ny cartoo`n.
+    - October first is the `Nathi`nal Day of Chi`na.
+
+- dialogue:
+    img: img/noimage.png
+    dialogue:
+      - What do you ofte`n do at `noo`n?
+      - I ofte`n take a `nap after lu`nch.
+
+- tongue_twist:
+    twist: Ca`n you ca`n a ca`n as a ca`n`ner ca`n ca`n a ca`n?
+    img: img/noimage.png
+
+- tongue_twist:
+    twist: If you `notice this `notice, you will `notice that this `notice is not worth `noticing.
+    img: img/noimage.png
+
+- game_choose_false:
+    # coma and space separated words:
+    correct: "`not, `no, a`nt, k`nife, `night, fu`n`ny "
+    wrong: "`ink, tha`nk "
+
+- exercise:
+    lines:
+      # - A. word B. word C. word D. word
+      - A. `not B. `no C.`ink D. `ant
+      - A. `knife B. `thank C. `night D. fu`n`ny
+      
+    answer: CB
+
+# - image_word: b!ir!d
+# - image_word: sk!ir!t 

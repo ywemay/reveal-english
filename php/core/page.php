@@ -11,6 +11,8 @@ class Page {
   var $js = [];
   var $postjs = [];
 
+  var $content_file = '';
+
   private $_head = '';
 
   function __construct($params = false) {
@@ -72,7 +74,7 @@ class Page {
     $site->head = $this->build_css() . "\n" . $this->build_js();
     $site->content = $this->content;
     $site->postjs = $this->build_js($this->postjs);
-    include(dirname(__FILE__) . '/tpl/html.tpl.php');
+    include(DIR_PHP . '/tpl/html.tpl.php');
     if ($ret) {
       $rez = ob_get_clean();
       return $rez;
@@ -124,7 +126,7 @@ class Page {
     $this->theme = $theme;
   }
 
-  function build_slideshow($src, $params = []) {
+  function default_scripts() {
     if ($this->theme) {
       $this->css('/css/theme/' . $this->theme . '.css');
     }
@@ -141,14 +143,44 @@ class Page {
       "/js/config.js",
       "/js/main.js"
     );
-    $isYaml = preg_match("/\.yaml$/", $src);
-    if ($isYaml) {
-      $ph = new Phonetics();
-    }
-    $content = div(
-      !$isYaml ? $this->get_content($src) : $ph->buildFromYaml($src),
-      ['class' => 'slides']);
+  }
 
+  function build_slideshow() {
+    $this->default_scripts();
+
+    switch($this->type) {
+      case 'php':
+        $content = $this->get_content($this->content_file);
+        break;
+      case 'yaml':
+        $yaml = yaml_parse_file($this->content_file);
+        $content = [];
+        if (method_exists($this, 'titleSlide')) {
+          $content[] = $this->titleSlide();
+        }
+        foreach($yaml as $page) {
+          foreach($page as $k => $params) {
+            $parts = explode('_', $k);
+            foreach($parts as $pk => $part) $parts[$pk] = ucfirst($part);
+            $f = 'slide' . (implode('', $parts));
+            if (method_exists($this, $f)) {
+              $content[] = $this->$f($params);
+            }
+            elseif (function_exists($f)) {
+              $content[] = $f($params);
+            }
+            else {
+              error_log("No function found: " . $f);
+            }
+          }
+        }
+        $content = implode("\n", $content);
+        break;
+      default:
+        error_log("Unknow slideshow source file type: " . $this->type);
+        break;
+    }
+    $content = div($content,  ['class' => 'slides']);
     $this->content = div($content, ['class' => 'reveal']);
     $this->build();
   }

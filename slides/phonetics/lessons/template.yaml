@@ -1,0 +1,51 @@
+# Separate words and images by ;
+
+- present:
+    words: ; ; ;
+    phrase:
+
+# - video:
+#    title: Theory
+#    url: video/sounds/L05.webm
+
+- rules:
+    ex: w`o`rd; w`o`rld
+
+- examples:
+    - example
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+
+- dialogue:
+    img: img/noimage.png
+    dialogue:
+      - question?
+      - answer.
+
+- tongue_twist:
+    twist: phrase.
+    img: img/noimage.png
+
+- tongue_twist:
+    twist: phrase.
+    img: img/noimage.png
+
+- game_choose_false:
+    # coma and space separated words:
+    correct: sh!ir!t, h!er!, g!ir!l
+    wrong: broth!er!, doct!or!
+
+- exercise:
+    lines:
+      # - A. word B. word C. word D. word
+      - A. broth`e`r B. sh`i`rt C. h`e`r D. g`i`rl
+    answer: ABCBD
+
+# - image_word: b!ir!d
+# - image_word: sk!ir!t

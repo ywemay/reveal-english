@@ -1,0 +1,55 @@
+# Separate words and images by ;
+
+- present:
+    words: e`lephant; `lift; `lantern; ho`liday
+    phrase: An e`lephant `likes `lifting a `lantern on the ho`liday.
+
+# - video:
+#    title: Theory
+#    url: video/sounds/L05.webm
+
+- rules:
+    l: f`ly; `letter; butterf`ly
+    ll: co`l`lect; co`l`lege; fo`l`low
+    
+
+- examples:
+    - a `liter of mi`lk
+    - Eng`lish C`lub
+    - a`larm c`lock
+    - p`lay the vio`lin
+    - c`lean the c`lassroom
+    - "`light co`lor"
+    - No prob`lem.
+    - "`Let me see."
+    - I'd be g`lad to help you after the c`lass.
+
+- dialogue:
+    img: img/noimage.png
+    dialogue:
+      - I want to go shopping in `London `later.
+      - Then you'd better make a `list.
+
+- tongue_twist:
+    twist: "`Lily `likes `little `Lenny's `lucky `lobster."
+    img: img/noimage.png
+
+- tongue_twist:
+    twist: "`A `lovely `lady `loved a `lawyer and `longed to `look after him."
+    img: img/noimage.png
+
+- game_choose_false:
+    # coma and space separated words:
+    correct: b`lind, b`link, b`lunt, fu`l`l,  fi`l`l, ki`l`l
+    wrong: bi`l`l, `like
+
+- exercise:
+    lines:
+      # - A. word B. word C. word D. word
+      - A. b`lind B. b`link C. b`lunt D. bi`l`l
+      - A. fu`l`l B. hi`l`l C. `like D. ki`l`l
+      
+    answer: DC
+
+# - image_word: b!ir!d
+# - image_word: sk!ir!t 

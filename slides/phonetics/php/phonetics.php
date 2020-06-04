@@ -1,48 +1,41 @@
 <?php
-
+require_once(DIR_PHP . '/core/lesson.php');
 // i: ɪ æ ɜ: ə ʌ ɑ: ɔ: ɒ u: ʊ
 // eɪ aɪ ɔɪ əʊ aʊ ɪə eə ʊə
 // θ ð ʃ ʒ tʃ dʒ ŋ
 
-class Phonetics {
+class Phonetics extends Lesson {
 
   // currently selected sound
   var $id = 0;
   var $sound = '';
-  var $type = 'missing';
+  var $sound_type = 'missing';
 
   var $lesson_ext = '.php';
 
-  var $lesson_files = [];
-
-  function index() {
+  function sounds_index() {
      return ['iː', 'ɪ', 'e', 'æ', 'ɜː', 'ə', 'ʌ',
       'ɑː', 'ɔː', 'ɒ', 'uː', 'ʊ', 'eɪ', 'aɪ', 'ɔɪ', 'əʊ', 'aʊ', 'ɪə', 'eə', 'ʊə', 'p', 'b', 't', 'd', 'k', 'g', 'f', 'v', 'θ', 'ð', 's', 'z', 'ʃ', 'ʒ', 'r', 'h', 'tʃ', 'dʒ', 'tr', 'dr', 'ts', 'dz', 'm', 'n', 'ŋ', 'l', 'w', 'j'];
-  }
-
-  function loadLessonFiles() {
-    $this->lesson_files = glob('lessons/*.(php|yaml)');
-    print_r($this->lesson_files);
   }
 
   function getIndex($mix) {
     if (is_int($mix)) {
       $id = $mix;
     }
-    elseif(($id = array_search($mix, $this->index())) > -1) {
+    elseif(($id = array_search($mix, $this->sounds_index())) > -1) {
       $id++;
     }
     return $id;
   }
 
-  function getType($mix) {
+  function getSoundType($mix) {
     if (is_int($mix)) {
       $id = $mix;
     }
-    elseif(($id = array_search($mix, $this->index())) > -1) {
+    elseif(($id = array_search($mix, $this->sounds_index())) > -1) {
       $id++;
     }
-    if (!file_exists($this->getLessonFile($id))) {
+    if (!$this->getLessonFile($id)) {
       return 'missing';
     }
     if ($id <= 12) {
@@ -64,9 +57,9 @@ class Phonetics {
     return in_array($id, $arr);
   }
 
-  function full_index(){
+  function full_sounds_index(){
     $rez = [];
-    foreach($this->index() as $k => $v) {
+    foreach($this->sounds_index() as $k => $v) {
       $rez[sprintf("%'.02d", $k+1)] = $v;
     }
     return $rez;
@@ -74,7 +67,7 @@ class Phonetics {
 
   function getLessonFile($mix) {
     $id = $this->getIndex($mix);
-    return lesson_exists('L' . sprintf("%'.02d", $id));
+    return $this->exists('L' . sprintf("%'.02d", $id));
   }
 
   function slideVideo($data) {
@@ -88,7 +81,7 @@ class Phonetics {
       foreach($line as $k) {
         $id = 'L' . sprintf("%'.02d", $this->getIndex($k));
         $cards[] = a('index.php?lesson=' . $id, "/$k/", [
-          'class' => $this->getType($k)
+          'class' => $this->getSoundType($k)
         ]);
       }
       $out[] = div(implode("\n", $cards));
@@ -106,8 +99,8 @@ class Phonetics {
 
   function setCurrent($mix) {
     $this->id = $this->getIndex($mix);
-    $this->sound = $this->index()[$this->id - 1];
-    $this->type = $this->getType($this->id);
+    $this->sound = $this->sounds_index()[$this->id - 1];
+    $this->sound_type = $this->getSoundType($this->id);
   }
 
   function buildFromYaml($fName) {
@@ -131,19 +124,19 @@ class Phonetics {
     return implode("\n", $out);
   }
 
-  function titlePage($fName) {
-    $nr = preg_replace("/^L(0+)?/", '', basename($fName, $this->lesson_ext));
+  function titlePage() {
+    $nr = intval(preg_replace("/^(L(0+)?)|(\.\w+$)/", '', basename($this->content_file)));
     $this->setCurrent(intval($nr));
     $out = [
       h1('phonetics'),
       h2('Lesson ' . $this->id),
-      el('card', "/$this->sound/", ['class' => $this->type, 'logg' => 'sound'])
+      el('card', "/$this->sound/", ['class' => $this->sound_type, 'logg' => 'sound'])
     ];
     return implode('  ', $out);
   }
 
-  function titleSlide($fName) {
-    return el('section', $this->titlePage($fName));
+  function titleSlide() {
+    return el('section', $this->titlePage());
   }
 
   function transcribe(&$word) {
@@ -211,7 +204,7 @@ class Phonetics {
     foreach($rules as $k => $set) {
       $cls = [
         $firstOne ? '' : 'fragment',
-        $this->type
+        $this->sound_type
       ];
       $firstOne = false;
       $div = [card($k, [

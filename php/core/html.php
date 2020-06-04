@@ -84,4 +84,12 @@ function array2content($content) {
   return $content;
 }
 
+function video($src, $attr = []) {
+  $attr += [
+    'src' => $src,
+    'controls' => false
+  ];
+  return el('video', 'Your browser does not support video tag.', $attr);
+} 
+
 ?>

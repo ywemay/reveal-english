@@ -1,3 +1,8 @@
+<?php
+
+$oGame = new Game();
+
+?>
 <section>
   <h1>Learning Stars</h1>
   <h3>Horse, Fox, Fish</h3>
@@ -111,7 +116,7 @@
 </section>
 
 <section class="paintgame" current_fill="fill:white;">
-    <?php print paintgame([
+    <?php print $oGame->paintgame([
       'art' => 'img/svg/horse.svg',
       'buttons' => ['white', 'black']
     ]); ?>
@@ -123,7 +128,7 @@
 </section>
 
 <section class="paintgame" current_fill="fill:white;">
-    <?php print paintgame([
+    <?php print $oGame->paintgame([
       'art' => 'img/svg/fox.svg',
       'buttons' => ['white', 'orange']
     ]); ?>
@@ -135,7 +140,7 @@
 </section>
 
 <section class="paintgame" current_fill="fill:white;">
-    <?php print paintgame([
+    <?php print $oGame->paintgame([
       'art' => 'img/svg/fish.svg',
       'buttons' => ['blue', 'lightblue', 'darkblue', 'yellow']
     ]); ?>
