@@ -26,3 +26,43 @@ card {
 .line-through {
   text-decoration: line-through;
 }
+
+.exercise-sort .width33 {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
+
+.exercise-sort .width33 {
+  width: 25%;
+}
+.exercise-sort .stack {
+  width: 45%
+}
+
+.exercise-sort .dropbox1 {
+  border: 3px solid orange;
+}
+
+.exercise-sort .dropbox2 {
+  border: 3px solid green;
+}
+div.dropbox2,
+div.dropbox1 {
+  height: 460pt !important;
+}
+
+.dragg {
+  cursor: -moz-grab
+}
+.wrong-option {
+  background: pink;
+}
+.correct-option {
+  background: lightgreen;
+}
+card.dragg {
+  font-size: 18pt;
+  line-height: 40pt;
+  margin: 3pt;
+}

@@ -2,6 +2,9 @@
     h1: Hello!
     h2: How are you?
 
+- video:
+    src: /video/simplesongs/HelloHelloHowAreYou.mp4
+
 - image:
     src: img/svg/Jack.svg
     title: Jack

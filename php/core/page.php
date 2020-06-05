@@ -32,23 +32,43 @@ class Page {
 
   function css($css) {
     if (is_array($css)) {
-      $this->css = array_merge($this->css, $css);
+      // $this->css = array_merge($this->css, $css);
+      foreach($css as $c) {
+        $this->css($c);
+      }
     }
-    else $this->css[] = $css;
+    else {
+      if (!in_array($css, $this->css)) {
+        $this->css[] = $css;
+      }
+    }
   }
 
   function js($js) {
     if (is_array($js)) {
-      $this->js = array_merge($this->js, $js);
+      // $this->js = array_merge($this->js, $js);
+      foreach($js as $j) {
+        $this->js($j);
+      }
     }
-    else $this->js[] = $js;
+    else {
+      if (!in_array($js, $this->js)) {
+        $this->js[] = $js;
+      }
+    }
   }
 
   function postjs($js) {
     if (is_array($js)) {
-      $this->postjs = array_merge($this->postjs, $js);
+      foreach($js as $j) {
+        $this->postjs($j);
+      }
     }
-    else $this->postjs[] = $js;
+    else {
+      if (!in_array($js, $this->postjs)) {
+        $this->postjs[] = $js;
+      }
+    }
   }
 
   function get_content($source) {
@@ -136,7 +156,8 @@ class Page {
     );
     array_unshift($this->js,
       "/js/jquery-1.12.4.js",
-      "/js/jquery-ui.js"
+      "/js/jquery-ui.js",
+      "/js/audio.js"
     );
     array_unshift($this->postjs,
       "/js/reveal.js",

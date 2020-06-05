@@ -80,7 +80,12 @@ class Phonetics extends Lesson {
       $cards = [];
       foreach($line as $k) {
         $id = 'L' . sprintf("%'.02d", $this->getIndex($k));
-        $cards[] = a('index.php?lesson=' . $id, "/$k/", [
+        $ttl = "/$k/";
+        if ($id == 'L00') {
+          $id = $k;
+          $ttl = $k;
+        }
+        $cards[] = a('index.php?lesson=' . $id, $ttl, [
           'class' => $this->getSoundType($k)
         ]);
       }
@@ -106,7 +111,6 @@ class Phonetics extends Lesson {
   function buildFromYaml($fName) {
     $this->lesson_ext = '.yaml';
 
-    $out[] = $this->titleSlide($fName);
 
     $yaml = yaml_parse_file($fName);
     foreach($yaml as $slide) {
@@ -126,6 +130,12 @@ class Phonetics extends Lesson {
 
   function titlePage() {
     $nr = intval(preg_replace("/^(L(0+)?)|(\.\w+$)/", '', basename($this->content_file)));
+    if (preg_match("/(R\d\d)\.\w+$/", $this->content_file, $mt)) {
+      return [
+        h1('Review'),
+        h2($mt[1])
+      ];
+    }
     $this->setCurrent(intval($nr));
     $out = [
       h1('phonetics'),
@@ -333,6 +343,29 @@ class Phonetics extends Lesson {
       img($img) . '<br />',
       card($word, ['mark'])
     ]);
+  }
+
+  function slideExerciseSort($data) {
+    $data += [
+      'options' => [' ', ' '],
+      'words' => ['one', 'two', 'three']
+    ];
+    $this->postjs('js/exercise-sort.js');
+    $out[] = div($data['options'][0], ['class' => ['width33', 'dropbox1']]);
+
+    $options = [];
+    foreach ($data['words'][0] as $w) {
+      $options[] = el('card', $w, ['class' => ['dragg', 'option1'], 'mark', 'ogg']);
+    }
+    foreach ($data['words'][1] as $w) {
+      $options[] = el('card', $w, ['class' => ['dragg', 'option2'], 'mark', 'ogg']);
+    }
+    shuffle($options);
+    //print_r($options);
+    //die();
+    $out[] = div($options, ['class' => ['width33', 'stack']]);
+    $out[] = div($data['options'][1], ['class' => ['width33', 'dropbox2']]);
+    return el('section', $out, ['class' => 'exercise-sort']);
   }
 }
  ?>
